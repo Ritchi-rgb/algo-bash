@@ -1,6 +1,6 @@
 #!/bin/bash
-#modof no 1 test pour git
-
+#modif no 1 test pour git
+#modif no 2 test pour git
 machine=$(hostname)
 echo "$machine"
 # bonne syntaxe aussi : la syntaxe suivane marche aussi echo "$(whoami)"
