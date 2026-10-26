@@ -7,3 +7,4 @@ echo "$machine"
 whoami
 echo "Nous sommes le $(date +%F)"
 echo "l'uptime est $(uptime)"
+
