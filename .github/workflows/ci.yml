@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+ qualite:
+   #runs-on: ubuntu-latest
+   runs-on: ubuntu-26.04 #forcer la version de Ubuntu en 26.04 et la télécharge pour être cohérent avec la version du Github (notre environment de test et de prod par exemple)
+   steps:
+     - name: Récupérer le code
+       uses: actions/checkout@v7
+
+     - name: Adapater le bash
+       run: bash -n script.sh
+
+     - name: Check du script bash
+       run: shellcheck *.sh  
+          
+
