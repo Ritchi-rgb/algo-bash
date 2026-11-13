@@ -13,7 +13,7 @@ jobs:
        uses: actions/checkout@v7
 
      - name: Adapater le bash
-       run: bash -n script.sh
+       run: bash -n sauvegarde.sh
 
      - name: Check du script bash
        run: shellcheck *.sh  
